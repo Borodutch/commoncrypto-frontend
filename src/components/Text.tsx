@@ -28,16 +28,21 @@ export const SubheaderText: FC = ({ children }) => {
   return <p className={subheaderText}>{children}</p>
 }
 
-const linkText = classnames(grayText, 'text-center', 'underline')
+const bodyText = classnames(grayText, 'text-center')
+export const BodyText: FC = ({ children }) => {
+  return <p className={bodyText}>{children}</p>
+}
+
+const linkText = classnames('underline')
 interface LinkTextProps {
   link: string
 }
 export const LinkText: FC<LinkTextProps> = ({ children, link }) => {
   return (
-    <p className={linkText}>
+    <span className={linkText}>
       <a href={link} rel="noreferrer noopener">
         {children}
       </a>
-    </p>
+    </span>
   )
 }
