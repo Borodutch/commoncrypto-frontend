@@ -1,6 +1,6 @@
-# Frontend code template in React
+# CommonCrypto frontend
 
-This template to be used for frontend applications. As opposed to [the previous one](https://github.com/backmeupplz/frontend-starter) written in Vue, this one uses React and Tailwind CSS.
+Code for free crypto exchange tickers API.
 
 ## Local launch
 
